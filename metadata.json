@@ -1,0 +1,6 @@
+{
+  "name": "FitCore AI",
+  "description": "A personalized fitness tracker that uses AI to generate daily workouts and monitor your fitness progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI_WORKOUT_GENERATION", "GOAL_TRACKING"]
+}

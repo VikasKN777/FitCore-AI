@@ -43,6 +43,7 @@ export const WorkoutPlanner: React.FC<Props> = ({ user }) => {
       await fitnessService.logWorkout(user.uid, {
         userId: user.uid,
         workoutId: workout.id,
+        title: workout.title,
         duration: workout.estimatedTime,
         notes: 'Completed AI suggested workout'
       });

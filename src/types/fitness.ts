@@ -42,6 +42,7 @@ export interface WorkoutLog {
   id?: string;
   userId: string;
   workoutId?: string;
+  title: string;
   date: any;
   duration: number;
   notes?: string;

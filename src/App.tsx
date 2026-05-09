@@ -7,6 +7,7 @@ import { Auth } from './components/Auth';
 import { UserProfileForm } from './components/UserProfileForm';
 import { WorkoutPlanner } from './components/WorkoutPlanner';
 import { GoalTracker } from './components/GoalTracker';
+import { WorkoutHistory } from './components/WorkoutHistory';
 import { Activity, Flame, TrendingUp, Calendar, LayoutDashboard } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -109,6 +110,7 @@ export default function App() {
           {/* Left/Middle Column - Workouts and Quick Stats */}
           <section className="col-span-1 lg:col-span-8 flex flex-col gap-8">
             <WorkoutPlanner user={profile} />
+            <WorkoutHistory userId={user.uid} />
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
